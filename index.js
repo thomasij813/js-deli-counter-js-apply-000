@@ -19,7 +19,7 @@ function currentLine(currentLine) {
   let outputString = 'The line is currently: '
   currentLine.forEach(function(customerName, i) {
     const placeInLine = i + 1
-    const comma = placeInLine === currentLine.length ? '' : ','
+    const comma = placeInLine === currentLine.length ? '' : ', '
     outputString += `${placeInLine}. ${customerName}${comma}` 
   })
   
